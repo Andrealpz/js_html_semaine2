@@ -10,5 +10,40 @@
       <img src="images/image3.jpg" id="image3" />
       <img src="images/image4.jpg" id="image4" />
       <img src="images/image5.jpg" id="image5" />
+      <script>
+       var img = document.getElementsByTagName('img');
+
+       img[0].addEventListener('mouseover', function(){
+        img[0].src = img[1].src;
+       }, false);
+       img[1].addEventListener('mouseover', function(){
+        img[1].src = img[2].src;
+       }, false);
+       img[2].addEventListener('mouseover', function(){
+        img[2].src = img[3].src;
+       }, false);
+       img[3].addEventListener('mouseover', function(){
+        img[3].src = img[4].src;
+       }, false);
+       img[4].addEventListener('mouseover', function(){
+        img[4].src = img[0].src;
+       }, false);
+
+       img[0].addEventListener('mouseout', function(){
+        img[0].src = "images/image1.jpg";
+       }, false);
+       img[1].addEventListener('mouseout', function(){
+        img[1].src = "images/image2.jpg";
+       }, false);
+       img[2].addEventListener('mouseout', function(){
+        img[2].src = "images/image3.jpg";
+       }, false);
+       img[3].addEventListener('mouseout', function(){
+        img[3].src = "images/image4.jpg";
+       }, false);
+       img[4].addEventListener('mouseout', function(){
+        img[4].src = "images/image5.jpg";
+       }, false);
+      </script>
   </body>
 </html>

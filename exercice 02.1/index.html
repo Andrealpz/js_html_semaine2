@@ -5,6 +5,17 @@
     <title>Exercice 1</title>
   </head>
   <body>
+
       <img src="images/image1.jpg" id="image1" />
+       <script>
+       	 var divBITE = document.getElementById('image1');
+       	
+       	 divBITE.addEventListener('mouseover', function(){
+       	 	divBITE.src = 'images/image1_2.jpg';
+       	 }, false);
+       	 divBITE.addEventListener('mouseout', function(){
+       	 	divBITE.src = 'images/image1.jpg';
+       	 }, false);
+       </script>
   </body>
 </html>
