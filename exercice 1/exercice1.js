@@ -1,5 +1,13 @@
-var Nom = prompt("Quel est ton nom?");
-var Prénom = prompt("Quel est ton prénom?");
-var Ville = prompt("Dans quelle ville habite tu ?");
+var age = prompt("Quel est ton age?");
+var sexe = prompt("fille ou garcon ?");
+var nationalité = prompt("De quelle nationalité es tu ?");
+age = parseInt(age);
+ 
+if(age < 18){
+	alert('Vous etes un/une ' + sexe + ' mineure ' + nationalité);
 
-alert(' Nom: ' + Nom + '\n Prénom: ' + Prénom + '\n Ville: ' + Ville);
+}
+else{
+	alert('Vous etes un/une ' + sexe + ' majeure ' + nationalité);
+}
+
