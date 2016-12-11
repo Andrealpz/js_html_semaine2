@@ -1,2 +1,7 @@
-var prénom = prompt('Quel est ton prénom?');
-alert('Bonjour,' + prénom);
+var age = prompt('Quel est ton age?');
+if(age>=18) {
+	alert('Vous etes majeur');
+}
+else{
+	alert('vous etes mineure');
+}
