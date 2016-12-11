@@ -8,5 +8,11 @@
   <form>
     <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" />
   </form>
+  <script>
+  	var bite = document.getElementById('nom');
+  	bite.addEventListener('keypress', function(){
+  		alert(bite.value);
+  	}, false);
+  </script>
 </body>
 </html>
